@@ -1,0 +1,11 @@
+lr: 0.1
+schedule_milestone: [50, 100]
+gamma: 0.1
+weight_decay: 1e-4
+momentum: 0.9
+train_batchsize: 128
+test_batchsize: 128
+num_epochs: 120
+partition: 'target'
+if_resume: False
+if_onlyeval: False

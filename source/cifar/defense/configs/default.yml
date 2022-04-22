@@ -1,0 +1,13 @@
+lr: 0.1
+schedule_milestone: [150, 225]
+gamma: 0.1
+weight_decay: 1e-4
+momentum: 0.9
+train_batchsize: 128
+test_batchsize: 128
+num_workers: 4
+num_epochs: 300
+partition: 'target'
+if_resume: False
+if_data_augmentation: False
+if_onlyeval: False
