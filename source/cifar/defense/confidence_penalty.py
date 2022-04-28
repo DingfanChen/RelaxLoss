@@ -13,7 +13,6 @@ sys.path.append(os.path.join(FILE_DIR, '../'))
 sys.path.append(os.path.join(FILE_DIR, '../../'))
 SAVE_ROOT = os.path.join(FILE_DIR, '../../../results/%s/%s/confidence_penalty')
 import models as models
-from datasets import CIFAR10, CIFAR100
 from base import CIFARTrainer
 from utils import mkdir, str2bool, write_yaml, load_yaml, adjust_learning_rate, plot_hist
 

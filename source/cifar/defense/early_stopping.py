@@ -12,7 +12,6 @@ sys.path.append(os.path.join(FILE_DIR, '../'))
 sys.path.append(os.path.join(FILE_DIR, '../../'))
 SAVE_ROOT = os.path.join(FILE_DIR, '../../../results/%s/%s/early_stopping')
 import models as models
-from datasets import CIFAR10, CIFAR100
 from base import CIFARTrainer
 from utils import mkdir, str2bool, load_yaml, write_yaml, adjust_learning_rate, plot_hist
 

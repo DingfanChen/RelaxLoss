@@ -1,6 +1,8 @@
 import os
 import sys
 import argparse
+import numpy as np
+import torch
 import torchvision.transforms as transforms
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -41,7 +43,7 @@ def check_args(parser):
 # helper functions
 #############################################################################################################
 class Attacker(BaseAttacker):
-    def set_dataset(self):
+    def set_dataloader(self):
         """The function to set the dataset parameters"""
         self.data_root = DATA_ROOT
         if self.args.dataset == 'CIFAR10':
