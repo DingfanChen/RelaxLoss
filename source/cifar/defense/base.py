@@ -11,7 +11,7 @@ FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_ROOT = os.path.join(FILE_DIR, '../../../data')
 sys.path.append(os.path.join(FILE_DIR, '../'))
 sys.path.append(os.path.join(FILE_DIR, '../../'))
-from datasets import CIFAR10, CIFAR100
+from dataset import CIFAR10, CIFAR100
 from utils import BaseTrainer, Partition
 
 

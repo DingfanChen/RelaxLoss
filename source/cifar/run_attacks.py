@@ -8,7 +8,7 @@ import torchvision.transforms as transforms
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(FILE_DIR, '../'))
 DATA_ROOT = os.path.join(FILE_DIR, '../../data')
-from datasets import CIFAR10, CIFAR100
+from dataset import CIFAR10, CIFAR100
 import models as models
 from utils import mkdir, load_yaml, write_yaml, BaseAttacker, Partition
 
