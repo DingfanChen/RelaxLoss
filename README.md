@@ -38,10 +38,18 @@ And `'vanilla'` corresponds to no defense baseline.
   - `'attack'`:  evaluate the target model under different MIAs (it requires to run defense first).
   - `'shadow'`: run the defense method to train a shadow model.
   - `'defense_attack'`: run the defense method to train a target model and directly evaluate the trained target model under different MIAs.
+- For CIFAR datasets, default configurations support `'resnet20'` and `'vgg11_bn'` models. 
 
 ### Run defense with specific configurations.
 - Go into folder `source/cifar/defense` or `source/nonimage/defense` depends on the dataset.
-- You can run each defense with command `python 'Defense_name'.py` and specify the arguments in command-lines. Please refer to the `parse_arguments()` function in each python file for more details.
+- You can run each defense with command 
+    ```defense
+    python 'Defense_name'.py \
+    -name "Experiment name (output folder name)" \
+    --dataset "Dataset name" \
+    [--model "Model architecture"(for CIFAR datasets)] \ 
+    ```
+   and specify the arguments in command-lines. Please refer to the `parse_arguments()` function in each python file for more details.
  
 ### Run attacks.
 - Go into folder `source/cifar` or `source/nonimage` depends on the dataset.
