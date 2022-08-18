@@ -6,7 +6,7 @@ import torch.utils.data as data
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(FILE_DIR, '../'))
 DATA_ROOT = os.path.join(FILE_DIR, '../../data')
-from datasets import prepare_texas, prepare_purchase
+from dataset import prepare_texas, prepare_purchase
 import models as models
 from utils import mkdir, load_yaml, write_yaml, BaseAttacker
 
